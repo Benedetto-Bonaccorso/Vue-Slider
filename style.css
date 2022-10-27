@@ -10,6 +10,16 @@ body{
     background-color: darkblue;
 }
 
-.boxArt{
-    height: 80vh;
+#app{
+    position: relative;
 }
+
+.boxArt{
+    height: 65vh;
+}
+
+.thumbs>img{
+    height: 25vh;
+}
+
+

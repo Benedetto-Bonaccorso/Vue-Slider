@@ -4,24 +4,36 @@ createApp({
   data() {
     return {
         seasons: [
-            {Image: "season-1.png",
-            Title: "season-1",
-            Episodes: 26}, 
-            {Image: "season-2.png",
+            {
+              Image: "season-1.png",
+              Title: "season-1",
+              Episodes: 26
+            }, 
+            {
+            Image: "season-2.png",
             Title: "season-2",
-            Episodes: 26}, 
-            {Image: "season-3.png",
+            Episodes: 26
+          }, 
+            {
+            Image: "season-3.png",
             Title: "season-3", 
-            Episodes: 26}, 
-            {Image: "season-4.png",
+            Episodes: 26
+          }, 
+            {
+            Image: "season-4.png",
             Title: "season-4", 
-            Episodes: 26},
-            {Image: "season-5.png",
+            Episodes: 26
+          },
+            {
+            Image: "season-5.png",
             Title: "season-5", 
-            Episodes: 52}
+            Episodes: 52
+          }
         ],
         episodeDuration:11,
+
         source: "./img/",
+        
         counter: 0,
     }
   }, 

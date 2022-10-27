@@ -16,14 +16,16 @@
     <main>
         <div id="app">
             <div class="text-center">
-                <img :src="source + seasons[counter].Image" class="boxArt">
+
                 <div class="buttons text-justify">
                     <button type="button" @click="counterDown">previous</button>
                     <button type="button" @click="counterUp">Next</button>
                 </div>
 
+                <img :src="source + seasons[counter].Image" class="boxArt">
+
                 <div class="thumbs">
-                    <img v-for="season in seasons" :src="source + seasons.Image"/>
+                    <img v-for="(season, i) in seasons" :key="i" :src="source + season.Image" v-on:click="this.counter = i"/>
                 </div>
 
         </div>
