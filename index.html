@@ -25,13 +25,13 @@
                 <img :src="source + seasons[counter].Image" class="boxArt">
 
                 <div class="thumbs">
-                    <img v-for="(season, i) in seasons" :key="i" :src="source + season.Image" v-on:click="this.counter = i"/>
+                    <img v-for="(season, i) in seasons" :key="i" :src="source + season.Image" v-on:click="counter = i" :id="'thumb' + i"/>
                 </div>
 
         </div>
     </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

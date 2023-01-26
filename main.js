@@ -1,5 +1,5 @@
 const { createApp } = Vue
-console.log("aaaa")
+
 createApp({
   data() {
     return {
@@ -33,7 +33,7 @@ createApp({
         episodeDuration:11,
 
         source: "./img/",
-        
+
         counter: 0,
     }
   }, 
@@ -50,6 +50,10 @@ createApp({
         this.counter = this.seasons.length-1
       }
     },
+    logg(){
+      console.log(this.counter)
+    }
+
   }
 
 }).mount('#app')
